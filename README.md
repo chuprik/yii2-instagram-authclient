@@ -2,6 +2,12 @@
 
 This extension adds Instagram OAuth2 supporting for [yii2-authclient](https://github.com/yiisoft/yii2-authclient).
 
+[![Latest Stable Version](https://poser.pugx.org/kotchuprik/yii2-instagram-authclient/v/stable)](https://packagist.org/packages/kotchuprik/yii2-instagram-authclient)
+[![Total Downloads](https://poser.pugx.org/kotchuprik/yii2-instagram-authclient/downloads)](https://packagist.org/packages/kotchuprik/yii2-instagram-authclient)
+[![Monthly Downloads](https://poser.pugx.org/kotchuprik/yii2-instagram-authclient/d/monthly)](https://packagist.org/packages/kotchuprik/yii2-instagram-authclient)
+[![Latest Unstable Version](https://poser.pugx.org/kotchuprik/yii2-instagram-authclient/v/unstable)](https://packagist.org/packages/kotchuprik/yii2-instagram-authclient)
+[![License](https://poser.pugx.org/kotchuprik/yii2-instagram-authclient/license)](https://packagist.org/packages/kotchuprik/yii2-instagram-authclient)
+
 ## Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
