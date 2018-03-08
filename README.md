@@ -41,9 +41,8 @@ and add the Instagram client to your auth clients.
         'clients' => [
             'instagram' => [
                 'class' => 'kotchuprik\authclient\Instagram',
-                    'clientId' => 'instagram_client_id',
-                    'clientSecret' => 'instagram_client_secret',
-                ],
+                'clientId' => 'instagram_client_id',
+                'clientSecret' => 'instagram_client_secret',
             ],
             // other clients
         ],
