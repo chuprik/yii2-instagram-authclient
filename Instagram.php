@@ -22,6 +22,14 @@ class Instagram extends OAuth2
     public $apiBaseUrl = 'https://api.instagram.com/v1';
 
     /**
+     * The list of permissions to request in the login.
+     * At the moment only basic is supported
+     *
+     * @var string
+     */
+    public $scope = 'basic';
+
+    /**
      * @inheritdoc
      */
     protected function initUserAttributes()
