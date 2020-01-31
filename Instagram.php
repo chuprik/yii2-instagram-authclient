@@ -19,16 +19,34 @@ class Instagram extends OAuth2
     /**
      * @inheritdoc
      */
-    public $apiBaseUrl = 'https://api.instagram.com/v1';
+    public $apiBaseUrl = 'https://graph.instagram.com';
+
+    /**
+     * The list of permissions to request in the login.
+     * At the moment only basic is supported
+     *
+     * @var string
+     */
+    public $scope = 'user_profile';
+
+    /**
+     * A comma separated list of fields
+     * @see https://developers.facebook.com/docs/instagram-basic-display-api/reference/user
+     *
+     * @var string|null
+     */
+    public $fields;
 
     /**
      * @inheritdoc
      */
     protected function initUserAttributes()
     {
-        $response = $this->api('users/self', 'GET');
-
-        return $response['data'];
+        $fields = '';
+        if (!empty($this->fields)) {
+            $fields = sprintf('?fields=%s', $this->fields);
+        }
+        return $this->api(sprintf('me%s', $fields), 'GET');
     }
 
     /**

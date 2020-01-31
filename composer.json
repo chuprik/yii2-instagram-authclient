@@ -11,6 +11,10 @@
     {
       "name": "Constantin Chuprik",
       "email": "constantinchuprik@gmail.com"
+    },
+    {
+      "name": "Gonzalo Payo",
+      "homepage": "https://www.bebup.es/"
     }
   ],
   "autoload": {
