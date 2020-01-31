@@ -30,7 +30,7 @@ to the `require` section of your composer.json.
 
 You must read the yii2-authclient [docs](https://github.com/yiisoft/yii2/blob/master/docs/guide/security-auth-clients.md)
 
-Register your application [in Instagram](http://instagram.com/developer/clients/register)
+Register your application [in Facebook](https://developers.facebook.com/docs/apps/) (be aware, it isn't easy nor intuitive to do it)
 
 and add the Instagram client to your auth clients.
 
@@ -43,6 +43,7 @@ and add the Instagram client to your auth clients.
                 'class' => 'kotchuprik\authclient\Instagram',
                 'clientId' => 'instagram_client_id',
                 'clientSecret' => 'instagram_client_secret',
+                'scope' => 'basic', // it will be basic if you don't set this
             ],
             // other clients
         ],
