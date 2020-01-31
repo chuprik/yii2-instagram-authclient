@@ -43,7 +43,7 @@ and add the Instagram client to your auth clients.
                 'class' => 'kotchuprik\authclient\Instagram',
                 'clientId' => 'instagram_client_id',
                 'clientSecret' => 'instagram_client_secret',
-                'scope' => 'basic', // it will be basic if you don't set this
+                'scope' => 'user_profile,user_media', // it will be 'user_profile' if you don't set this
             ],
             // other clients
         ],
