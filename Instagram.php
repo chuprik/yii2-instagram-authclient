@@ -27,7 +27,7 @@ class Instagram extends OAuth2
      *
      * @var string
      */
-    public $scope = 'basic';
+    public $scope = 'user_profile';
 
     /**
      * @inheritdoc
